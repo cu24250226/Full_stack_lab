@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nimbus | Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="store-extras.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">Namocart<span>.</span></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html" class="active">Cart <span id="cart-badge" class="cart-badge">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h1>Your Cart</h1>
+
+      <p id="empty-cart-msg" class="empty-msg" style="display:none;">
+        Your cart is empty. <a href="product.html">Browse products</a> to add something.
+      </p>
+
+      <table class="cart-table" id="cart-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+        </tbody>
+        <tfoot>
+          <tr class="grand-total-row">
+            <td colspan="3">Grand Total</td>
+            <td id="cart-grand-total">₹0</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="cart-actions">
+        <a href="product.html" class="btn btn-secondary">Continue Shopping</a>
+        <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Contact us: support@namocart.com | +91 98765 43210</p>
+      <p>&copy; 2026 Namocart. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
